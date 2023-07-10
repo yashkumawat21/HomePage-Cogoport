@@ -1,0 +1,1993 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+    box-sizing: border-box;
+    
+    
+    text-decoration: none;
+}
+
+body{
+    
+    
+overflow:scroll;
+flex-shrink: 0;;  
+min-width: fit-content;
+    
+    
+}
+
+
+.navbar1 {
+    
+    position: sticky;
+    top: 0;
+    flex-wrap: nowrap;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+    padding: 8px 16px;
+    
+    font-weight: 500;
+    
+    background: #fbdc00;
+
+    transition: background-colr 0.4s ease-in-out;
+   
+
+}
+.navbar1.scrolled{
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(169,188,218,.65);
+}
+
+#crossmark{
+    display: none;
+}
+
+
+.navlogo{
+    display: flex;
+    flex-shrink: 0;
+    margin-left: auto;
+    cursor: pointer;
+    align-items: center;
+    
+}
+
+.navcenter{
+
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.navcenteritems{
+    display: flex;
+    align-items: center;
+    font-family: "Ubuntu",sans-serif;
+    font-weight: 500;
+   
+}
+
+.navcenteritems p{
+
+    margin-left: 40px;
+    font-size: 14px;
+    font-family: 500;
+}
+.navcenter p:hover{
+   
+    color: #ee3425;
+ }
+ 
+ .navside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+ }
+
+ .navlogin{
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    cursor: pointer;
+ }
+.navlogin p{
+
+    margin-left: 5px;
+    display: flex;
+    font-size: 14px;
+    font-family: 500;
+    font-family: "Ubuntu",sans-serif;
+
+}
+
+.navside button{
+
+    border-radius: 8px;
+    padding: 4px 16px;
+    border: 1px solid #ee3425;
+    font-family: "PT Sans",sans-serif;
+    height: 36px;
+    min-width: 72px;
+    color: #fff;
+    background-color: #ee3425;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.firstbackground{
+
+    position: relative;
+    width: 100%;
+    padding-top: 57px;
+    margin-top: -57px;
+    background:url(/images/home-banner-background-1.webp);
+    background-color: #ebbe00;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+.firstbgcontainer
+{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    height: 392px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+
+}
+
+.introleft{
+
+    flex: 1 1;
+}
+.introleft h1{
+    
+    color: #000;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-size: 40px;
+
+    font-weight: bold;
+    font-family: "Ubuntu",sans-serif;
+
+    
+    
+}
+.introleft p{
+    line-height: 1.5;
+    font-family: "PT Sans",sans-serif;
+    margin-top: 0em;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.videon img{
+    display: flex;
+    flex: 1 1;
+    width: 595px;
+    height: 400px;
+    margin-bottom: -39px;
+    backface-visibility: hidden;
+   
+}
+
+.whatapp-form{
+    display: flex;
+    flex-direction: column;
+}
+.contacthead{
+    
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    color: #000;
+    font-family: "PT Sans",sans-serif;
+
+
+}
+
+.entryform{
+    display: flex;
+    margin-top: 5px;
+}
+.entryforminside{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.formleft{
+    width: 110px;
+    min-width: 110px;
+    display: block;
+    position: relative;
+    height: 41px;
+    border: 1px solid #e0e0e0;
+    border-right: none;
+    background-color:#fff ;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+}
+.formleft i{
+    position: absolute;
+
+    right: 20px;
+    font-size: 16px;
+    
+}
+
+.formleft p{
+    position: absolute;
+    align-self: center;
+    top:9px;
+    left:40px;
+
+}
+
+.formleft img{
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    width: 20px;
+    height: 20px;
+
+}
+.formright input{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 41px;
+    padding-right: 100px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-left: none;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+
+.formright button{
+    position: absolute;
+    top: 9px;
+    right: 12px;
+    width: 90px;
+    padding: 2px 4px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background: #36bb22;
+    border: 1px solid #36bb22;
+    font-family: "PT Sans",sans-serif;
+    border-radius: 12px;
+    align-items: center;
+ 
+    font-size: 14px;
+    font-weight: 700;
+
+    
+}
+.details{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    
+   
+}
+.cargodetails{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 50px 0;
+   
+    
+    
+    
+    
+}
+
+.cargodetails div{
+
+    text-align: center;
+    
+}
+
+.cargo1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cargo1 h1{
+    margin-bottom: 5px;
+    font-size: 40px;
+    line-height: 1.2;
+    font-family: "Ubuntu",sans-serif;
+    color: #ee3425;
+    font-weight: bold;
+
+}
+
+.cargo1 p{
+
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-family: "Ubuntu",sans-serif;
+    color: #000;
+    font-weight: bold;
+
+}
+
+.whatsppbutton{
+    position: fixed;
+    top: 20%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 90px;
+    z-index: 250;
+    padding: 7px;
+    cursor: pointer;
+    background-color: #ee3425;
+    filter: drop-shadow(0 0 16px rgb(98 127 172/50%));
+    border-radius: 4px 0 0 4px;
+    transition: .15s ease-in-out;
+}
+.whatsppbutton img{
+    width: 35px;
+    height: 35px;
+}
+
+.whatsppbutton h3{
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    font-family: "PT Sans",sans-serif;
+}
+.cborder{
+    background: #fffef2;
+}
+
+.curveborder{
+
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 18px;
+    border-bottom-right-radius: 100% 150%;
+    border-bottom-left-radius: 100% 150%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.offwhite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    background: #fffef2;
+}
+.maptitle{
+    
+    margin-top: 40px;
+
+    
+}
+
+
+.box4{
+    
+    
+    
+    display: flex;
+    width: 1200px;
+    align-items: center;
+    
+    padding: 16px;
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-right: auto;
+    
+   
+}
+
+
+.box4title{
+    flex: 1 1;
+}
+.box4 h1{
+    font-family: "Ubuntu",sans-serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.box4 p{
+    font-family: "PT Sans",sans-serif;
+    font-size: 14px;
+}
+
+.box4imgmp{
+    display: flex;
+    flex: 1 1;
+    justify-content:flex-end;
+
+}
+
+.box4imgmp img{
+    color: transparent;
+    display: block;
+    width: 500px;
+    
+    object-fit: contain;
+    height: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+
+}
+.products{
+
+    width: 1200px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+}
+
+.proddetoutbox{
+    display: flex;
+    justify-content: space-between;
+    background: #fffef2
+}
+.products h1{
+    text-align: center;
+    
+
+    font-size: 28px;
+    font-weight: bold ;
+    font-family: "Ubuntu",sans-serif;
+    margin-bottom: 1em;
+}
+
+.productdetails{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.productsdetailscontainer{
+    display: flex;
+    
+    align-items: center;
+    margin: 14px 0;
+}
+
+
+.productsdetailscontainer h2{
+    width: 300px;
+    margin-right: 50px;
+    font-size: 24px;
+    align-items: center;
+    margin-bottom: 1em;
+    font-family: "Ubuntu",sans-serif;
+    font-weight: bold;
+}
+
+.productbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.productinbox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 184px;
+    height: 160px;
+    padding: 10px 7px;
+    margin: 10px;
+    background: #fff;
+    border: 1.5px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(169,188,218,.65);
+}
+
+.productinbox p{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ee3425;
+    cursor: pointer;
+    font-family: "PT Sans",sans-serif;
+
+}
+
+.productinbox i{
+
+    
+}
+
+.productbox h3{
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 1.3em;
+    text-align: center;
+    font-family: "Ubuntu",sans-serif;
+}
+.sliding-window{
+    margin-bottom: 50px;
+}
+.companies h3{
+
+    font-size: 28px;
+    font-family: "Ubuntu",sans-serif;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 120px;
+    overflow-x: hidden;
+   
+  }
+  
+ 
+  .logoone{
+    display: flex;
+    animation: 32s slide infinite linear;
+    
+  }
+ 
+  
+  .logos-slide {
+    
+    display: flex;
+    flex-shrink: 0;
+    gap: 0.1rem;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 100%;
+  }
+  
+  .logos-slide img {
+    height: 73px;
+    width: 146px;
+    margin: 0 40px;
+    aspect-ratio: auto 146/73;
+  }
+
+  .supply-chain{
+    margin-bottom: 50px;
+    background-color: #fbdc00;
+    box-sizing: border-box;
+  }
+  .supply-chain-info{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+    
+  }
+
+  .supply-chain-info h1{
+    
+    display: block;
+    font-size: 28px;
+    line-height: 1.2;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: "Ubuntu",sans-serif;
+        
+    
+
+  }
+
+  .supply-chain-info button{
+
+    background-color: #ee3425;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ee3425;
+    
+        min-width: 72px;
+        height: 36px;
+        padding: 4px 16px;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 4px;
+
+
+  }
+.howitworks{
+    width:1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+   
+    box-sizing: border-box;
+    
+    
+    text-decoration: none;
+}
+
+.howitworks{
+    width:1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+}
+
+.howitworksbox{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.headingworkbox{
+    font-size: 28px;
+    line-height: 1.2;
+
+    text-align: center;    
+    font-weight: bold;
+    
+    font-family: "Ubuntu",sans-serif;
+
+    margin-bottom: 1em;
+}
+.headingindustry {
+    
+    font-size: 28px;
+    line-height: 1.2;
+
+    text-align: center;    
+    font-weight: bold;
+    
+    font-family: "Ubuntu",sans-serif;
+
+    margin-bottom: 1em;
+
+}
+
+.headingblogs{
+    font-size: 28px;
+    line-height: 1.2;
+
+    text-align: center;    
+    font-weight: bold;
+    
+    font-family: "Ubuntu",sans-serif;
+
+    margin-bottom: 1em;
+}
+.heading{
+    font-size: 28px;
+    line-height: 1.2;
+
+    text-align: center;    
+    font-weight: bold;
+    
+    font-family: "Ubuntu",sans-serif;
+
+    margin-bottom: 1em;
+}
+
+
+
+.workoptions{
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+#cargobttn{
+
+    width: 200px;
+    background-color: #fbdc00;
+    border: #fbdc00;
+    margin: 0 20px;
+    min-width: 72px;
+    height: 36px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+   
+    color: #000;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#logisticbttn{
+
+    width: 200px;
+    line-height: 1.2;
+    margin: 0 20px;
+    background: #e5dfdf;
+    border: grey;
+    
+    min-width: 72px;
+    height: 36px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+   
+    color: #000;
+    border-radius: 20px;
+
+}
+
+
+.cargoworkbox{
+
+    display: flex;
+    
+}
+.cargo123{
+
+   
+    display: flex;
+   
+    position: relative;
+
+}
+.logisticbox{
+    display: none;
+    position: relative;
+    
+}
+.box1img{
+
+    position: absolute;
+    top: 104px;
+    left: 300px;
+    width: 150px;
+    
+}
+.box2img{
+    position: absolute;
+
+    bottom: 116px;
+    left: 300px;
+    width: 150px;
+}
+.box3img{
+    position: absolute;
+
+    top: 104px;
+    right: 300px;
+    width: 150px;
+}
+.box4img{
+    position: absolute;
+
+    bottom: 116px;
+    right: 300px;
+    width: 150px;
+}
+
+.box1imglo{
+    position: absolute;
+    top: 130px;
+    left: 300px;
+    width: 150px;
+
+}
+.box2imglo{
+    position: absolute;
+    bottom: 150px;
+    left: 300px;
+    width: 150px;
+
+}
+.box3imglo{
+    position: absolute;
+    top: 130px;
+    right: 300px;
+    width: 150px;
+
+}
+.box4imglo{
+    position: absolute;
+    bottom: 150px;
+    right: 300px;
+    width: 150px;
+
+}
+
+.laptopimg{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.laptopimg img{
+    width: 560x;
+    height: 320px;
+}
+
+
+.workinginbox1{
+    width: 300px;
+    padding: 16px;
+    
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(169,188,218,.65);
+    margin-bottom: 120px;
+    
+}
+.workinginbox3{
+
+    width: 300px;
+    padding: 16px;
+    margin-bottom: 120px;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(169,188,218,.65);
+}
+.workinginbox2{
+    width: 300px;
+    padding: 16px;
+    
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(169,188,218,.65);
+}
+.workinginbox4{
+    width: 300px;
+    padding: 16px;
+    
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(169,188,218,.65);
+}
+
+.workinboxpoints{
+    display: flex;
+}
+
+.cargoworkbox h4{
+
+    color: #ee3425;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 1em;
+
+    font-family: "PT Sans",sans-serif;
+}
+
+.cargoworkbox h3{
+    padding-left: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "PT Sans",sans-serif;
+
+
+}
+
+.workinboxhead{
+    display: flex;
+    align-items: center;
+    padding: 0 0 10px;
+
+}
+
+.cargoworkbox a{
+    padding-top: 3px;
+}
+
+.cargoworkbox p{
+
+    padding-bottom: 5px;
+    padding-left: 8px;
+    font-size: 16px;
+
+    font-family: "PT Sans",sans-serif;
+
+    line-height: 1.5;
+   
+
+
+
+}
+
+
+
+
+
+.industry{
+
+    padding: 16px;
+    margin-bottom: 50px;
+    background: #fffef3;
+
+}
+
+.industrybox{
+
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+
+}
+
+.industrytypes{
+
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.eachindustry{
+
+    width: 100px;
+    margin: 10px;
+}
+
+.eachindustry img{
+
+    width: 100px;
+    height: 100px;
+}
+
+.eachindustry p{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    line-height: 1.5;
+
+    font-family: "PT Sans",sans-serif;
+}
+
+.getstartbox {
+    margin-bottom: 50px;
+}
+
+.getstartmainbox{
+    display: flex;
+    width: 1200px;
+    align-items: center;
+    padding: 16px 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.getsthead{
+
+    flex:1 1;
+    
+}
+
+.getsthead h2{
+
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-family: "Ubuntu",sans-serif;
+    display: bold;
+
+
+}
+
+.getsthead p{
+
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 16px;
+    font-family: "PT Sans",sans-serif;
+  
+}
+.getsthead a{
+    font-size: 14px;
+    font-family: "PT Sans",sans-serif;
+
+}
+
+.getsthead button{
+
+    display: inline-block;
+    height: 40px;
+    padding: 8px 42px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background-color:#ee3425 ;
+    border-radius: 8px;
+    border: #ee3425;
+}
+
+.getstimg {
+    display: flex;
+    flex: 1 1;
+    justify-content: flex-end;
+}
+@keyframes bounce{
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-10px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+.getstimg img{
+
+
+    width: 280px;
+    height: 360px;
+
+    display: block;
+    -o-object-fit: contain;
+    object-fit: contain;
+    animation-name: bounce;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.vidknowmore{
+    margin-bottom: 50px;
+}
+
+.ytimg{
+    position: relative;
+    height: 450px;
+    cursor: pointer;
+}
+
+.ytimgbg{
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+    color: transparent;
+    background-color: rgba(0,0,0,.4);
+    
+}
+
+.playimg{
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.4);
+
+}
+.ytimgplay{
+  
+    
+
+    
+    
+    width: 60px;
+    height: 60px;
+    margin-bottom: 8px;
+
+}
+
+.knowmore{
+    background-color: #ee3425;
+    
+}
+
+.knowmorebox{
+
+    width: 1200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+
+}
+
+.kmleft {
+    padding: 25px 0;
+    color: #fff;
+}
+
+.kmleft h3{
+
+    margin-bottom: 10px;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: bold;
+    font-family: "Ubuntu",sans-serif;
+    
+}
+
+.kmleft p{
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-family: "PT Sans",sans-serif;
+}
+
+.knowmorebox button {
+    border: 1px solid #ee3425;
+    min-width: 72px;
+    height: 36px;
+    padding: 4px 16px;
+    color: #000;
+    background: #fbdc00;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.blogs{
+
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    
+}
+
+.insideblogs{
+    display: flex;
+    flex-direction: column;
+}
+
+.blogscontainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.blogbox{
+
+    width: calc(calc(100% / 3) - 20px);
+    margin-right: 10px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    overflow: hidden;
+    text-align: start;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px hsla(0,0%,79%,.5);
+
+
+}
+
+.blogscontainer img{
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-color: #fbdc00;
+   
+    object-fit: cover;
+    cursor: pointer;
+}
+    
+.blogboxtext{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.blogscontainer h4{
+    margin-bottom: 5px;
+    font-size: 16px;
+color:#ee3425;
+
+}
+
+
+.blogscontainer h2{
+    margin-bottom: 5px;
+    font-size: 18px;
+
+    font-weight: bold;
+
+    font-family: "Ubuntu",sans-serif;
+
+    line-height: 1.5;
+   
+
+    
+
+}
+
+.blogscontainer p{
+
+    max-height: calc(1.4rem * 3);
+    overflow: hidden;
+    
+    margin-bottom: 1em;
+    font-family: "PT Sans",sans-serif;
+    
+    font-size: 16px;
+
+}
+
+.blogbottom{
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.blogbottom span{
+
+    color: #ee3425;
+    font-weight: 700;
+    font-family: "PT Sans",sans-serif;
+
+
+}
+
+.blogbottom h6{
+
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #9a9a9a;
+    font-family: "Ubuntu",sans-serif;
+
+    font-weight: bold;
+
+}
+
+.bottomcurveborder{
+
+    background-color: #fbdc00;
+}
+
+.blogbutton{
+
+    align-items: center;
+    text-align: center;
+    
+    justify-content: center;
+   
+}
+.blogbutton button{
+
+    min-width: 72px;
+    height: 36px;
+    padding: 8px 42px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background-color:#ee3425 ;
+    border-radius: 4px;
+    border: 1px solid #ee3425;
+}
+
+.subscribe{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    
+    background-color:#fbdc00;
+}
+
+.subsimg{
+    width: 20%;
+    padding: 20px;
+    margin: 20px;
+}
+
+.subsimg img{
+    width: 100%;
+    height: 100%;
+}
+
+.substext h3{
+    font-size: 28px;
+    line-height: 1.2;
+    font-family: "Ubuntu",sans-serif;
+    font-weight: bold;
+}
+
+.substext p{
+
+    font-size: 16px;
+    font-family: "PT Sans",sans-serif;
+}
+
+.subsform{
+    margin-top: 20px;
+    display: flex;
+}
+.subsform input{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.subsform button{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    background: #ee3425;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+    font-family: "PT Sans",sans-serif;
+    cursor: pointer;
+    min-width: 72px;
+    color: #fff;
+    padding: 4px 16px;
+    border: 1px solid #ee3425;
+
+
+}
+
+.btl1upper{
+    
+display: block;
+
+}
+
+.bottomlayer1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    background: #fbdc00;
+    padding: 0 50px 50px;
+    font-family: "PT Sans",sans-serif;
+    
+}
+
+.bottomeachcolumm{
+   
+   
+    justify-content: space-between;
+    width: 100%;
+}
+.bottomhead{
+    height: 38px;
+}
+
+.bottomhead h1{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    
+    line-height: 1.5;
+    text-decoration: underline;
+}
+.bottomlayer1details {
+    margin: 8px 0;
+}
+
+.bottomlayer1details h3{
+    margin-top: 8px;
+    margin-bottom: 1em;
+    font-family: "Ubuntu",sans-serif;
+    font-weight: bold;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+.bottomlayer1details p{
+
+    cursor: pointer;
+    font-weight: 400;
+    color: #000;
+    margin-top: 8px;
+    font-size: 14px;
+
+}
+.bottomlayer1details p:hover{
+
+   text-decoration: underline;
+  
+
+}
+
+.bottomlayer2{
+
+  
+    box-sizing: border-box;
+    background-color: #ebbe00;
+    width:100%
+
+}
+
+.shipment_det{
+   
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 0;
+    
+}
+
+.shipdetcolumn p{
+
+    cursor: pointer;
+    font-weight: 400;
+    color: #000;
+    font-family: "PT Sans",sans-serif;
+   
+    font-size: 14px;
+    line-height: 2rem;
+
+}
+
+.shipdetcolumn p:hover{
+    text-decoration: underline;
+    color: #ee3425;
+
+}
+
+.footer{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 30px;
+    background: #ebbe00;
+}
+.footerleft{
+
+    display: flex;
+    align-items: center;
+}
+
+.footerleft p{
+    display: flex;
+    margin-left: 10px;
+    font-family: "Ubuntu",sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.footerright{
+    
+    display: flex;
+    align-items: center;
+}
+
+.flright{
+    margin-left: 40px;
+}
+.language{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    background: transparent;
+}
+
+.language h2{
+    
+    font-size: 15px;
+    font-weight: 700;
+    color: #ee3425;
+    text-decoration: underline;
+
+    font-family: "PT Sans",sans-serif;
+}
+.language img{
+
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.social_logos{
+
+    padding: 8px 30px;
+    cursor: pointer;
+}
+
+.hiddenlayer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "PT Sans",sans-serif;
+    background: #fbdc00;
+   
+
+}
+.hiddenlayerelement{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    
+    border-bottom: 0.5px solid rgba(0,0,0,.4);
+}
+
+.hiddenlayerelement h1{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Ubuntu",sans-serif;
+}
+.hiddenlayerfooter{
+
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: #ebbe00;
+}
+
+.upperonefooter{
+    display: flex;
+    
+    height: max-content;
+}
+
+#appearnav{
+    display: none;
+    height:500px;
+    width: 100%;
+    background: #fbdc00;
+
+}
+
+.nainside{
+    display: flex;
+}
+.nainside button{
+    border-radius: 8px;
+    padding: 4px 16px;
+    border: 1px solid #ee3425;
+    font-family: "PT Sans",sans-serif;
+    height: 36px;
+    min-width: 72px;
+    color: #fff;
+    background-color: #ee3425;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 20px;
+}
+
+@media (min-width :767px) {
+
+    
+    
+    .hiddenlayer{
+        display: none;
+    }
+
+    .navlogo i{
+        display:none;
+    }
+    
+}
+@media(max-width :767px){
+
+    body{
+
+        min-width:auto;
+        overflow-x:hidden ;
+    }
+   .navlogo{
+    margin-left: 0;
+   }
+
+   .navbar1{
+    width:100%;
+   }
+    .firstbackground {
+        width: 100%;
+    
+    background-size: initial;
+
+    }
+    .navlogo i{
+        align-self: center;
+        margin-right: 30px;
+    }
+
+    .firstbgcontainer{
+        width: 100%;
+
+        flex-direction: column-reverse;
+        height: 552px;
+    }
+    .videon img{
+        display: flex;
+        margin:0px;
+        width: 100%;
+    }
+
+    .introleft br{
+        display: none;
+    }
+
+    .introleft h1{
+
+        font-size: 24px;
+    }
+
+    .details{
+        width: 100%;
+    }
+    .cargodetails{
+        padding: 0;
+    }
+
+    .cargo1{
+        width: 50%;
+    text-align: center;
+    }
+    .cargo1 h1{
+        font-size: 24px;
+
+    }
+
+    .whatsppbutton{
+        display: none;
+    }
+
+    .cargo1 p{
+        font-size: 14px;
+    }
+
+    .offwhite{
+        padding: initial;
+    margin-bottom: 32px;
+    }
+
+    .box4{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding-right: 16px;
+        padding-left: 16px;
+
+    }
+
+    .box4title{
+        display: flex;
+    flex-direction: column;
+    }
+    .box4 h1{
+        font-size: 24px;
+    }
+
+    .products{
+
+        width: 100%;
+    }
+
+    .products h1{
+        padding: 0;
+    margin-bottom: 0;
+    text-align: inherit;
+    font-size: 20px;
+
+    }
+
+    .proddetoutbox{
+        display: flex;
+        padding: 0;
+    }
+    .productsdetailscontainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .productsdetailscontainer h2{
+        display: flex;
+    width: 100%;
+    margin-right: 0;
+    font-size: 16px;
+    }
+
+    .productbox{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .productinbox{
+        width: 128px;
+    height: 128px;
+    padding: 0;
+    margin: 8px;
+    }
+
+    .productinbox  h3{
+        margin-bottom: 5px;
+    font-size: 14px;
+    }
+
+    .productinbox p{
+        margin: 8px 0 6px 8px;
+        font-size: 12px;
+
+    }
+
+    
+
+    
+
+    .sliding-window{
+        margin-bottom: 32px;
+
+    }
+    .companies h3{
+        font-size:20px;
+    }
+
+    .supply-chain{
+        margin-bottom: 32px;
+    }
+    .supply-chain-info{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .supply-chain-info h1{
+        padding: 10px 0;
+        font-size: 20px;
+        
+    }
+
+    .howitworks{
+        width: 100%;
+    }
+    .howitworksbox{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    }
+
+    .headingworkbox{
+        max-width: 258px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    
+    }
+    .workoptions{
+        flex-direction: column;
+    }
+
+    #cargobttn, #logisticbttn{
+        margin-bottom:16px;
+    }
+    .cargo123, .logisticbox{
+        flex-direction: column;
+
+    }
+    .laptopimg{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        order: -1;
+    }
+    .laptopimg img{
+        width: 280px;
+        height: auto;
+        margin-top: 10px;
+    
+    }
+    .workinginbox1 , .workinginbox2 ,.workinginbox3 ,.workinginbox4 {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .box1img,.box2img,.box3img,.box4img,.box1imglo,.box2imglo,.box3imglo,.box4imglo{
+        display: none;
+    }
+
+    .industry{
+
+        padding: initial;
+        margin-bottom: 32px;
+
+    }
+    .industrybox{
+
+        width:100%;
+
+    }
+
+    .headingindustry{
+        font-size: 20px;
+    }
+    .industrytypes{
+        justify-content: center;
+    }
+
+    .getstartbox{
+        margin-bottom: 32px;
+    }
+
+    .getstartmainbox{
+        
+        display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+    
+    }
+
+    .getsthead{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vidknowmore{
+        margin-bottom: 32px;
+    }
+
+    .knowmorebox{
+        flex-direction: column;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .kmleft{
+        padding: 10px 0;
+    }
+
+    .blogs{
+        width: 100%;
+    }
+    .headingindustry {
+        font-size: 20px;
+    }
+    .blogscontainer{
+        flex-direction: column;
+    align-items: center;
+    }
+
+    .blogbox{
+        width: auto;
+    }
+    .blogbox img{
+        width: 100%;
+    }
+
+    .blogbutton{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .subscribe{
+        text-align: center;
+    }
+
+    .subsimg{
+        display: none;
+    }
+    .substext{
+        padding: 0 16px;
+        text-align: center;
+    }
+
+    .social_logos{
+        padding: 8px 8px
+    }
+    .language{
+        margin-bottom: 5px;
+    }
+    .bottomlayer1 ,.bottomlayer2{
+        display: none;
+    }
+
+    .navcenter ,.navside{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+}
+
+@media(max-height:600px){
+    body{
+        min-height:600px;
+    }
+}
